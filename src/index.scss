@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.app {
+    background-color: #FFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .ui-layout {
+        width: 80%;
+        padding: 5% 1% 0;
+
+        .screen-layout {
+            height: 25vh;
+
+            .sub-screen {
+                text-align: right;
+                color: #4a4a4a;
+            }
+
+            .screen {
+                text-align: right;
+                color: #000000;
+                font-size: 5vw;
+                font-weight: bold;
+            }
+        }
+
+        .buttons-layout {
+            display: flex;
+            flex-wrap: wrap;
+
+            button {
+                width: 23%;
+                border: none;
+                padding: 2.5% 0;
+                margin: 0.5vh 1%;
+                font-size: 20px;
+                background-color: #acacac;
+                color: #000000;
+                cursor: pointer;
+                border-radius: 10px;
+
+                &.submit {
+                    background-color: #00b5fd;
+                    color: black;
+                }
+            }
+        }
+    }
+}
